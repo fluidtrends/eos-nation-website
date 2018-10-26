@@ -1,0 +1,28 @@
+{
+  "name": "eos-nation-website",
+  "version": "1.0.0",
+  "description": "eos-nation-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start-storybook -p 9009 -c .storybook -s static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluidtrends/eos-nation-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fluidtrends/eos-nation-website/issues"
+  },
+  "homepage": "https://github.com/fluidtrends/eos-nation-website#readme",
+  "devDependencies": {
+    "@storybook/addon-knobs": "^3.4.11",
+    "@storybook/react": "^3.4.11"
+  },
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
