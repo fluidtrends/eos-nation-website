@@ -1,11 +1,15 @@
 {
   "name": "eos-nation-website",
   "version": "1.0.0",
+  "homepage": "https://fluidtrends.github.io/eos-nation-website",
   "description": "eos-nation-website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start-storybook -p 9009 -c .storybook -s static"
+    "start": "start-storybook -p 9009 -c .storybook -s static",
+    "build": "build-storybook -o build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,10 +20,10 @@
   "bugs": {
     "url": "https://github.com/fluidtrends/eos-nation-website/issues"
   },
-  "homepage": "https://github.com/fluidtrends/eos-nation-website#readme",
   "devDependencies": {
     "@storybook/addon-knobs": "^3.4.11",
-    "@storybook/react": "^3.4.11"
+    "@storybook/react": "^3.4.11",
+    "gh-pages": "^2.0.1"
   },
   "dependencies": {
     "react": "^16.6.0",
