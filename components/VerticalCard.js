@@ -5,9 +5,9 @@ class VerticalCard extends React.Component {
     const { imageUrl, title, description, btnText, btnLink } = this.props;
     return (
       <div>
-        <span>{imageUrl}</span>
-        <span>{title}</span>
-        <span>{description}</span>
+        <div>{imageUrl}</div>
+        <div>{title}</div>
+        <div>{description}</div>
         <a href={btnLink}>{btnText}</a>
       </div>
     );
