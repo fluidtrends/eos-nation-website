@@ -1,0 +1,97 @@
+.card-container {
+  background: #EBEDEE;
+  padding: 50px;
+  margin: 50px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card-image-icon {
+  font-size: 7.5rem;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.card-image-wrapper {
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  background: #324856;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.card-description {
+  height: 180px;
+}
+
+/*typography*/
+.sub-header {
+  color: #324856;
+  font-family: "SF Pro Display";
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.38px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.section-header {
+  color: #324856;
+  font-family: "SF Pro Display";
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: 0.66px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.paragraph {
+  color: #324856;
+  font-family: "SF Pro Display";
+  font-size: 22px;
+  letter-spacing: 0.19px;
+  line-height: 30px;
+}
+
+/*utilities*/
+.margin-top-large {
+  margin-top: 50px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*buttons*/
+.btn {
+  height: 60px;
+  width: 240px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  display: inherit;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  letter-spacing: 0.38px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.btn.btn-link {
+  line-height: 3.5;
+  text-decoration: none;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #D66C44;
+}
+
+.btn.btn-secondary {
+  color: #fff;
+  background-color: #324856;
+}
