@@ -20,11 +20,13 @@
   border-radius: 50%;
 }
 
-.card-description {
-  height: 180px;
+/*typography*/
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-/*typography*/
 .sub-header {
   color: #324856;
   font-family: "SF Pro Display";
@@ -54,8 +56,20 @@
 }
 
 /*utilities*/
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .margin-top-large {
   margin-top: 50px;
+}
+
+.margin-top-medium {
+  margin-top: 20px;
+}
+
+.width-1-1 {
+  width: 100%;
 }
 
 .text-align-center {
@@ -82,7 +96,7 @@
 }
 
 .btn.btn-link {
-  line-height: 3.5;
+  line-height: 3.8;
   text-decoration: none;
 }
 
