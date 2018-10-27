@@ -5,7 +5,7 @@ https://fluidtrends.github.io/eos-nation-website
 
 #### UI Components:
 - [X] Configure dev setup
-- [ ] Tall Card
+- [X] Tall Card
 - [ ] Carousel Card
 - [ ] Carousel Container
 - [ ] Calendar
