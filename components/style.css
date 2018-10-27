@@ -1,7 +1,7 @@
 .card-container {
   background: #EBEDEE;
   padding: 50px;
-  margin: 50px;
+  margin: 0 50px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 

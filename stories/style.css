@@ -3,5 +3,6 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  padding: 0 50px;
   justify-content: space-around;
 }
