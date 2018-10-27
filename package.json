@@ -21,8 +21,10 @@
     "url": "https://github.com/fluidtrends/eos-nation-website/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
     "@storybook/addon-knobs": "^3.4.11",
     "@storybook/react": "^3.4.11",
+    "babel-core": "6",
     "gh-pages": "^2.0.1"
   },
   "dependencies": {
