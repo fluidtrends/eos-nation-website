@@ -12,3 +12,21 @@ https://fluidtrends.github.io/eos-nation-website
 - [ ] User Card
 - [ ] Twitter Card
 - [ ] Footer
+
+
+## Development setup
+### Prerequisites:
+You need to install create react app cli, chunky-cli, and storybook cli.
+
+### Setup
+```npm i```
+Create web folder:
+```mkdir .chunky; cd .chunky; mkdir web```
+
+## Run storybook
+```npm run start```
+Open browser tab an type: ```http://localhost:9009```
+
+## Run chunky website
+```chunky start web```
+Open browser tab an type: ```http://localhost:8082```
