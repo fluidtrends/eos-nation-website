@@ -1,9 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, withKnobs } from '@storybook/addon-knobs';
+import { text, date, withKnobs } from '@storybook/addon-knobs';
 import './style.css';
 
 import VerticalCard from '../components/VerticalCard';
+import CarouselCard from '../components/CarouselCard';
 
 storiesOf('Cards', module)
   .addDecorator(withKnobs)
@@ -33,6 +34,7 @@ storiesOf('Cards', module)
       </div>
     );
   })
+
   .add('EOS Nation Section', () => {
     return (
       <div>
@@ -65,4 +67,28 @@ storiesOf('Cards', module)
         </div>
       </div>
     );
+  })
+
+  .add ('Carousel Card', () => {
+    const image = text("Image", "https://storage.googleapis.com/multiply-react/public/images/carousel-card-img.png");
+    const title = text("Title", "EOS Meeting");
+    const label = 'Event Date';
+    const defaultValue = new Date('Jan 20 2017');
+    // const groupId = 'GROUP-ID1';
+    // const eventDate = date(label, defaultValue, groupId);
+    const eventDate = (name, defaultValue) => {
+      const stringTimestamp = date(name, defaultValue)
+      return new Date(stringTimestamp).toString()
+    };
+    const btnText = text("Button text", "Read more");
+    const btnLink = text("Button link", "https://github.com/grigio/eosfilestore-web");
+    return (
+      <CarouselCard
+      image={image}
+      title={title}
+      date={eventDate(label,defaultValue)}
+      btnText={btnText} btnLink={btnLink}
+      />
+    )
   });
+
