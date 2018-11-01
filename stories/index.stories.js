@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, withKnobs } from '@storybook/addon-knobs';
-import './style.css';
+import '../assets/style.css';
 
-import VerticalCard from '../components/VerticalCard';
+import VerticalCard from '../chunks/intro/components/VerticalCard';
 
 storiesOf('Cards', module)
   .addDecorator(withKnobs)

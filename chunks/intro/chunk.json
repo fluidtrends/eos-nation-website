@@ -26,64 +26,82 @@
         "primaryActionLink": "/start"
       },
       "components": {
-        "intro" : {
+        "intro": {
           "source": "summary",
           "text": "local://intro",
           "image": "logo.gif",
           "textColor": "#37474F"
         },
         "pillars": {
-          "source": "benefits",
-          "benefits": [
-            {"text": "local://product", "image": "product.png"},
-            {"text": "local://fullstack", "image": "fullstack.png"},
-            {"text": "local://lowcode", "image": "lowcode.png"}
+          "source": "valueSection",
+          "values": [
+            {
+              "title": "Community",
+              "description": "We're dedicated to fostering the EOS platform through reliable and efficient block production and community engagement.",
+              "iconName": "group",
+              "btnText": "Learn more",
+              "btnLink": "https://medium.muz.li/creating-a-consistent-visual-hook-16441bae8d2b"
+            },
+            {
+              "title": "Ambassadors",
+              "description": "An EOS Nation Ambassador is an individual that is passionate about EOS projects and wants to play a part in that ecosystem.",
+              "iconName": "place",
+              "btnText": "Learn more",
+              "btnLink": "https://medium.muz.li/creating-a-consistent-visual-hook-16441bae8d2b"
+            },
+            {
+              "title": "Tools",
+              "description": "If EOS Nation is \"elected\" as Block Producer, two Elastic Compute Cloud (EC2) instances will be running as full EOS nodes.",
+              "iconName": "storage",
+              "btnText": "Learn more",
+              "btnLink": "https://medium.muz.li/creating-a-consistent-visual-hook-16441bae8d2b"
+            }
           ],
-          "textColor": "#37474F",
+          "title": "Why vote for us?",
+          "textColor": "#ffcc000",
           "backgroundColor": "#FAFAFA"
         },
         "features": [
           {
             "id": "feature-web",
             "source": "feature",
-            "text":"local://web",
-            "image":"web.png",
-            "actionTitle":"Learn More",
-            "backgroundColor":"#ffffff",
-            "textColor":"#0686d8"
+            "text": "local://web",
+            "image": "web.png",
+            "actionTitle": "Learn More",
+            "backgroundColor": "#ffffff",
+            "textColor": "#0686d8"
           },
           {
             "id": "feature-mobile",
             "source": "feature",
-            "text":"local://mobile",
-            "image":"mobile.png",
+            "text": "local://mobile",
+            "image": "mobile.png",
             "reversed": true,
-            "actionTitle":"Learn More",
-            "backgroundColor":"#E1F5FE",
-            "textColor":"#0686d8"
+            "actionTitle": "Learn More",
+            "backgroundColor": "#E1F5FE",
+            "textColor": "#0686d8"
           },
           {
             "id": "feature-cloud",
             "source": "feature",
-            "text":"local://cloud",
-            "image":"cloud.png",
-            "actionTitle":"Learn More",
-            "backgroundColor":"#ffffff",
-            "textColor":"#0686d8"
+            "text": "local://cloud",
+            "image": "cloud.png",
+            "actionTitle": "Learn More",
+            "backgroundColor": "#ffffff",
+            "textColor": "#0686d8"
           },
           {
             "id": "feature-devops",
             "source": "feature",
-            "text":"local://devops",
-            "image":"devops.png",
+            "text": "local://devops",
+            "image": "devops.png",
             "reversed": true,
-            "actionTitle":"Learn More",
-            "backgroundColor":"#E1F5FE",
-            "textColor":"#0686d8"
+            "actionTitle": "Learn More",
+            "backgroundColor": "#E1F5FE",
+            "textColor": "#0686d8"
           }
         ]
       }
     }
-
   }
 }

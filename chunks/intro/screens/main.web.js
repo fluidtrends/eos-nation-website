@@ -1,27 +1,35 @@
 import React from 'react'
-import { Screen, Components } from 'react-dom-chunky'
+import { Screen } from 'react-dom-chunky'
+import * as CustomComponents from "../components";
 
 export default class MainIntroScreen extends Screen {
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { ...this.state }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     super.componentDidMount()
   }
 
-  onCloudPrimary () {
+  onCloudPrimary() {
     console.log('on cloud primary action....')
   }
 
-  get features () {
+  get features() {
     return ([])
   }
 
-  components () {
+  loadCustomComponent(props) {
+    return (props) => {
+      const CustomComponent = CustomComponents[props.source];
+      return (<CustomComponent {...props} />);
+    }
+  }
+
+  components() {
     return super.components()
-          .concat(this.features)
+      .concat(this.features)
   }
 }

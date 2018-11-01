@@ -1,3 +1,12 @@
+.cards-wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-around;
+}
+
 .card-container {
   background: #EBEDEE;
   padding: 50px;
@@ -12,7 +21,8 @@
 .card-image-icon {
   font-size: 6.5rem;
   color: #fff;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
+  margin-top: 10px;
 }
 
 .card-image-wrapper {
