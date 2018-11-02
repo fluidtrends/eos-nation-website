@@ -8,7 +8,6 @@ import moment from 'moment';
 import VerticalCard from '../components/VerticalCard';
 import CarouselCard from '../components/CarouselCard';
 import CarouselWrapper from '../components/CarouselWrapper';
-import CSlider from '../components/CSlider';
 import CarouselSlider from '../components/CarouselSlider';
 
 storiesOf('Cards', module)

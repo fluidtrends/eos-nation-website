@@ -30,8 +30,8 @@
     "@storybook/addon-knobs": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-core": "6",
-    "react-savor": "0.x",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "react-savor": "0.x"
   },
   "dependencies": {
     "react": "^16.6.0",
