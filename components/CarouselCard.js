@@ -8,10 +8,12 @@ class CarouselCard extends React.Component {
         return (
             <div className='carousel-card-container'>
                 <div className='carousel-card-img'><img src={image}/></div>
-                <div className='sub-header'>{title}</div>
-                <div>
-                    <span className='carousel-card-date'>{date}</span>
-                    <span className='btn btn-link'><a href={btnLink}>{btnText}</a></span>
+                <div className="carousel-card-info flex-col-space-between">
+                    <div className='paragraph'>{title}</div>
+                     <div className='flex-row-space-between'>
+                        <p className='section-text'>{date}</p>
+                        <p><a className='section-text' href={btnLink}>{btnText}</a></p>
+                    </div>
                 </div>
             </div>
         );
