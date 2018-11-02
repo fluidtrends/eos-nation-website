@@ -2,9 +2,14 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, date, withKnobs } from '@storybook/addon-knobs';
 import './style.css';
+import moment from 'moment';
+
 
 import VerticalCard from '../components/VerticalCard';
 import CarouselCard from '../components/CarouselCard';
+import CarouselWrapper from '../components/CarouselWrapper';
+import CSlider from '../components/CSlider';
+import CarouselSlider from '../components/CarouselSlider';
 
 storiesOf('Cards', module)
   .addDecorator(withKnobs)
@@ -76,19 +81,35 @@ storiesOf('Cards', module)
     const defaultValue = new Date('Jan 20 2017');
     // const groupId = 'GROUP-ID1';
     // const eventDate = date(label, defaultValue, groupId);
-    const eventDate = (name, defaultValue) => {
-      const stringTimestamp = date(name, defaultValue)
-      return new Date(stringTimestamp).toString()
-    };
+    const stringTimestamp = date(label, defaultValue)
     const btnText = text("Button text", "Read more");
     const btnLink = text("Button link", "https://github.com/grigio/eosfilestore-web");
     return (
       <CarouselCard
       image={image}
       title={title}
-      date={eventDate(label,defaultValue)}
+      date={moment(stringTimestamp).format('DD MM YYYY')}
       btnText={btnText} btnLink={btnLink}
       />
     )
-  });
+  })
 
+  .add ('Carousel', () => {
+    const title = text("Title", "Community");
+    const description = text("Description","To explore and help the eccosystem grow, tools need be developed.  EOS Nation helps users with the need tools")
+    const btnText = text("Button text", "Explore more");
+    const btnLink = text("Button link", "https://github.com/grigio/eosfilestore-web");
+    return (
+      <CarouselWrapper
+      carouselTitle={title}
+      carouselDescription={description}
+      carouselBtnText={btnText} carouselBtnLink={btnLink}
+      />
+    )
+  })
+
+  .add ('CarouselSlider', () => {
+    return (
+      <CarouselSlider/>
+    )
+  })
