@@ -64,21 +64,26 @@ export class CalendarItem extends Component {
                 <GridCell span="2">
                   {metaInfo.length ? metaInfo[0] : <Body2>-</Body2>}
                 </GridCell>
-                <GridCell span="8">
+                <GridCell span="7">
                   <GridInner>
                     {metaInfo.length > 1 ? metaInfo.map((info, index) => (
                       index !== 0 ? <GridCell span="6">{metaInfo[index]}</GridCell> : null
                     )) : <Body2>-</Body2>}
                   </GridInner>
                 </GridCell>
-                <GridCell span="2" className="text-align-right">
-                  <span className="margin-right-medium">
-                    <a href={facebookLink} target="_blank"><Icon className="fab fa-facebook-f facebook-custom-icon" /></a>
-                  </span>
-                  <span className="margin-right-medium">
-                    <a href={twitterLink} target="_blank"><Icon className="fab fa-twitter" /></a>
-                  </span>
-                  <a href={meetupLink} target="_blank"><Icon className="fab fa-meetup" /></a>
+                <GridCell span="3" className="text-align-right" style={{marginLeft:"-20px"}}>
+                  {facebookLink ?
+                    <span><a className="margin-left-medium" href={facebookLink} target="_blank">
+                      <Icon className="fab fa-facebook-f facebook-custom-icon" /></a></span> : null
+                  }
+                  {twitterLink ?
+                    <span><a className="margin-left-medium" href={twitterLink} target="_blank"><Icon
+                      className="fab fa-twitter" /></a></span> : null
+                  }
+                  {meetupLink ?
+                    <span><a className="margin-left-medium" href={meetupLink} target="_blank"><Icon
+                      className="fab fa-meetup" /></a></span> : null
+                  }
                 </GridCell>
               </GridInner>
             </GridCell>
