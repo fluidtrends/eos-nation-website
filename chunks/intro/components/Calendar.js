@@ -17,7 +17,7 @@ export class CalendarItem extends Component {
       </Body2>);
     }
     if (extraInfoLink) {
-      metaInfo.push(<a href={extraInfoLink}><Body2 link>
+      metaInfo.push(<a href={extraInfoLink} target="_blank"><Body2 link>
         <i className="fas fa-info-circle margin-right-small" />More info
       </Body2></a>);
     }
@@ -73,12 +73,12 @@ export class CalendarItem extends Component {
                 </GridCell>
                 <GridCell span="2" className="text-align-right">
                   <span className="margin-right-medium">
-                    <a href={facebookLink}><Icon className="fab fa-facebook-f facebook-custom-icon" /></a>
+                    <a href={facebookLink} target="_blank"><Icon className="fab fa-facebook-f facebook-custom-icon" /></a>
                   </span>
                   <span className="margin-right-medium">
-                    <a href={twitterLink}><Icon className="fab fa-twitter" /></a>
+                    <a href={twitterLink} target="_blank"><Icon className="fab fa-twitter" /></a>
                   </span>
-                  <a href={meetupLink}><Icon className="fab fa-meetup" /></a>
+                  <a href={meetupLink} target="_blank"><Icon className="fab fa-meetup" /></a>
                 </GridCell>
               </GridInner>
             </GridCell>
