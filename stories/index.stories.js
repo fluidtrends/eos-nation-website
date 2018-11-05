@@ -2,13 +2,15 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, date, withKnobs } from '@storybook/addon-knobs';
 import './style.css';
+import '../assets/style.css';
 import moment from 'moment';
 
 
-import VerticalCard from '../components/VerticalCard';
 import CarouselCard from '../components/CarouselCard';
 import CarouselWrapper from '../components/CarouselWrapper';
 import CarouselSlider from '../components/CarouselSlider';
+import VerticalCard from '../chunks/intro/components/VerticalCard';
+import Calendar from '../chunks/intro/components/Calendar';
 
 storiesOf('Cards', module)
   .addDecorator(withKnobs)
@@ -112,3 +114,71 @@ storiesOf('Cards', module)
       <CarouselSlider/>
     )
   })
+
+});
+
+
+const slug = text("Event slug", "582 EOS");
+const name = text("Name", "Blockchain Hub in Nigeria");
+const location = text("Location", "London, UK");
+const timeInterval = text("Time Interval", "10-12 pm");
+const dateData = new Date(date("Date", new Date('Jan 20 2017')));
+const extraInfoLink = text("ExtraInfoLink", "extraInfoLink");
+const facebookLink = text("FacebookLink", "facebookLink");
+const twitterLink = text("TwitterLink", "twitterLink");
+const meetupLink = text("MeetupLin", "meetupLink");
+
+const dateMock = new Date('Apr 5 2018');
+const calendarItemData1 = {
+  slug,
+  date: dateData,
+  name,
+  timeInterval,
+  location,
+  extraInfoLink,
+  facebookLink,
+  twitterLink,
+  meetupLink
+};
+const calendarItemData2 = {
+  slug: "197 EOS",
+  date: dateMock,
+  name: "Eos Ignite",
+  location: "Leeds, UK",
+  timeInterval: "10-12pm",
+  extraInfoLink,
+  facebookLink,
+  twitterLink,
+  meetupLink
+};
+const calendarItemData3 = {
+  slug,
+  date: dateMock,
+  name,
+  timeInterval,
+  extraInfoLink,
+  facebookLink,
+  twitterLink,
+  meetupLink
+};
+const calendarItemData4 = { slug, date: dateMock, name, facebookLink, twitterLink, meetupLink };
+const calendarEvents = [calendarItemData1, calendarItemData2, calendarItemData3, calendarItemData4];
+
+storiesOf('Calendar', module)
+  .addDecorator(withKnobs)
+  .add('Calendar', () => {
+
+    return (
+      <div className="storybook-container">
+        <Calendar events={calendarEvents} />
+      </div>
+    );
+  })
+  .add('EOS Nation Events Section', () => {
+    return (
+      <div className="margin-top-large margin-bottom-large">
+        <h2 className="section-header text-align-center margin-bottom-large">EOS Nation Sponsored Projects & Events</h2>
+        <Calendar events={calendarEvents} />
+      </div>
+    );
+  });
