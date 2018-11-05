@@ -38,6 +38,56 @@ body a{
   border-radius: 50%;
 }
 
+.carousel-card-container {	
+  height: 297.63px;	
+  width: 260px;	
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.carousel-card-img{
+  max-height: 199.41px;
+  width: 260px;
+}
+
+.carousel-card-img img{
+  width: 100%;
+}
+
+.carousel-card-info {
+  height: 66px;
+  width: 224px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.carousel-container {
+    height: 581.4px;
+    width: 1400px;
+    background: linear-gradient(to right, grey, #272D2D);
+  }
+
+.carousel-info {
+  height: 100%;
+  width: 300px;
+  padding: 10px 10px 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-cards{
+background: none;
+align-items: center;
+}
+
+.carousel-slider {
+  width: 1000px
+}
+
+
 /*typography*/
 @font-face {
   font-family: "San Francisco";

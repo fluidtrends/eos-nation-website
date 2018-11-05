@@ -115,9 +115,6 @@ storiesOf('Cards', module)
     )
   })
 
-});
-
-
 const slug = text("Event slug", "582 EOS");
 const name = text("Name", "Blockchain Hub in Nigeria");
 const location = text("Location", "London, UK");
