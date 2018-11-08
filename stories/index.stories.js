@@ -5,6 +5,7 @@ import '../assets/style.css';
 
 import VerticalCard from '../chunks/intro/components/VerticalCard';
 import Calendar from '../chunks/intro/components/Calendar';
+import Footer from '../chunks/intro/components/Footer';
 
 storiesOf('Cards', module)
   .addDecorator(withKnobs)
@@ -16,7 +17,7 @@ storiesOf('Cards', module)
     const imageUrl = text("Image Url", "");
 
     return (
-      <div className="storybook-container">
+      <div className="storybook-container" style={{ display: "flex" }}>
         <VerticalCard
           title={title} description={description} image={() => {
           return <i className="fas fa-users card-image-icon" />;
@@ -37,8 +38,8 @@ storiesOf('Cards', module)
   .add('EOS Nation Section', () => {
     return (
       <div>
-        <h2 className="section-header text-align-center">Why vote for us?</h2>
-        <div className="storybook-container">
+        <h2 className="section-header text-align-center margin-bottom-large">Why vote for us?</h2>
+        <div className="storybook-container" style={{ display: "flex" }}>
           <VerticalCard
             title={"Community"}
             description={"We're dedicated to fostering the EOS platform through reliable and efficient block production and community engagement."}
@@ -130,6 +131,23 @@ storiesOf('Calendar', module)
       <div className="margin-top-large margin-bottom-large">
         <h2 className="section-header text-align-center margin-bottom-large">EOS Nation Sponsored Projects & Events</h2>
         <Calendar events={calendarEvents} />
+      </div>
+    );
+  });
+
+storiesOf('Footer', module)
+  .addDecorator(withKnobs)
+  .add('Footer Component', () => {
+    const links = [
+      { url: 'http://google.com', text: "Privacy Policy" },
+      { url: 'http://google.com', text: "BP.json" },
+      { url: 'http://google.com', text: "Ownership Disclosure" },
+      { url: 'http://google.com', text: "Code of Conduct" },
+      { url: 'http://google.com', text: "BP Agreement Compliance Rating" },
+    ];
+    return (
+      <div className="">
+        <Footer links={links} />
       </div>
     );
   });

@@ -24,6 +24,7 @@ export const Body2 = styled.p`
 	color: ${props => props.primary ? props.primary : "#FFFFFF"};
 	font-family: "SF Pro Text";
 	font-size: 16px;
+	font-weight: ${props => props.bold ? "bold" : "inherit"};
 	text-decoration: ${props => props.link ? "underline" : "inherit"};
 	letter-spacing: 0.13px;
 	line-height: 19px;
@@ -36,4 +37,11 @@ export const Icon = styled.i`
 	border-radius: 50%;
 	font-size: 15px;
 	box-shadow: 0 2px 2px 1px rgba(0,0,0,0.5);
+`;
+
+export const FooterWrapper = styled.div`
+  color: ${props => props.primary ? props.primary : "#fff"};
+	background: ${props => props.primary ? props.primary : "#324856"};
+	padding: 50px;
+	width: 100%;
 `;

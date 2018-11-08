@@ -100,12 +100,20 @@
   margin-bottom: 50px;
 }
 
+.margin-bottom-medium {
+  margin-bottom: 20px;
+}
+
 .margin-left-medium {
   margin-left: 20px;
 }
 
 .margin-right-medium {
   margin-right: 20px;
+}
+
+.margin-right-large {
+  margin-right: 50px;
 }
 
 .margin-right-small {
@@ -147,12 +155,11 @@
   font-family: "SF Pro Display";
   font-size: 16px;
   letter-spacing: 0.38px;
-  line-height: 19px;
+  line-height: 3.8;
   text-align: center;
 }
 
 .btn.btn-link {
-  line-height: 3.8;
   text-decoration: none;
 }
 
@@ -219,4 +226,54 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.input {
+  height: 60px;
+  padding: 0 20px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.footer-email-input {
+  height: 59px;
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  display: inline-block;
+  width: 280px;
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.footer-subscribe-btn {
+  width: 200px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  display: inline-block;
+}
+
+@media (max-width: 1330px) {
+  .footer-email-input{
+    display: block;
+    width: 80%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .footer-subscribe-btn {
+    margin-top: 20px;
+    display: block;
+    width: 86%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
