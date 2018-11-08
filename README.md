@@ -11,7 +11,7 @@ https://fluidtrends.github.io/eos-nation-website
 - [X] Calendar
 - [ ] User Card
 - [ ] Twitter Card
-- [ ] Footer
+- [X] Footer
 
 
 ## Development setup
