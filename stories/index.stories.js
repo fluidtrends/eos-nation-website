@@ -42,7 +42,7 @@ storiesOf('Cards', module)
     return (
       <div>
         <h2 className="section-header text-align-center margin-bottom-large">Why vote for us?</h2>
-        <div className="storybook-container" style={{ display: "flex" }}>
+        <div className="storybook-container values-wrapper" style={{ display: "flex" }}>
           <VerticalCard
             title={"Community"}
             description={"We're dedicated to fostering the EOS platform through reliable and efficient block production and community engagement."}
@@ -196,7 +196,7 @@ storiesOf('Demo page', module)
     return (
       <div className="storybook-container padding-top-large">
         <h2 className="section-header text-align-center margin-bottom-large">Why vote for us?</h2>
-        <div className="padding-bottom-large align-center" style={{ display: "flex", maxWidth:"1400px" }}>
+        <div className="padding-bottom-large align-center values-wrapper" style={{ display: "flex", maxWidth:"1400px" }}>
           <VerticalCard
             title={"Community"}
             description={"We're dedicated to fostering the EOS platform through reliable and efficient block production and community engagement."}

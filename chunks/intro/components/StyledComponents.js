@@ -45,5 +45,4 @@ export const FooterWrapper = styled.div`
   color: ${props => props.primary ? props.primary : "#fff"};
 	background: ${props => props.primary ? props.primary : "#324856"};
 	padding: 50px;
-	width: 100%;
 `;

@@ -341,3 +341,21 @@ table {
   flex-direction: column;
   justify-content: space-between;
 }
+
+@media (max-width: 780px) {
+  .values-wrapper{
+    flex-direction: column;
+  }
+  .card-container{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  .footer-email-input{
+    width: 100%;
+  }
+  .footer-subscribe-btn{
+    padding: 0 20px;
+    width: 100%;
+  }
+}
