@@ -81,7 +81,7 @@ storiesOf('Cards', module)
         <Heading4 center className="section-header padding-top-large margin-bottom-large">
           Meat the Team
         </Heading4>
-        <div className="user-card-wrapper">
+        <div className="user-card-wrapper align-center">
           <UserCard name={name} role={role} imageURL={imageURL} link={link} />
           <UserCard name={name} role={role} imageURL={imageURL} link={link} />
           <UserCard name={name} role={role} imageURL={imageURL} link={link} />
