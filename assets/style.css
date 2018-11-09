@@ -291,7 +291,7 @@ table {
   text-decoration: underline;
 }
 
-.team-section{
+.team-section {
   background: url("team_background.png");
   background-size: cover;
   background-position: center;
@@ -306,6 +306,17 @@ table {
 .user-card-container {
   background: #fff;
   width: 380px;
+}
+
+@media (max-width: 480px) {
+  .user-card-container {
+    width: 250px;
+  }
+}
+@media (max-width: 850px) {
+  .user-card-container {
+    width: 300px;
+  }
 }
 
 .user-description {
