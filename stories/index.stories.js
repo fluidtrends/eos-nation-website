@@ -4,8 +4,10 @@ import { date, text, withKnobs } from '@storybook/addon-knobs';
 import '../assets/style.css';
 
 import VerticalCard from '../chunks/intro/components/VerticalCard';
+import UserCard from '../chunks/intro/components/UserCard';
 import Calendar from '../chunks/intro/components/Calendar';
 import Footer from '../chunks/intro/components/Footer';
+import {Heading4} from '../chunks/intro/components/StyledComponents';
 
 storiesOf('Cards', module)
   .addDecorator(withKnobs)
@@ -67,6 +69,28 @@ storiesOf('Cards', module)
         </div>
       </div>
     );
+  })
+  .add('User card', () => {
+    const name = text("Name", "Denis Carriere");
+    const role = text("Role", "cto");
+    const imageURL = text("User Image", "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg");
+    const link = text("Read more link", "http://google.com");
+
+    return (
+      <div className="storybook-container team-section">
+        <Heading4 center className="section-header padding-top-large margin-bottom-large">
+          Meat the Team
+        </Heading4>
+        <div className="user-card-wrapper">
+          <UserCard name={name} role={role} imageURL={imageURL} link={link} />
+          <UserCard name={name} role={role} imageURL={imageURL} link={link} />
+          <UserCard name={name} role={role} imageURL={imageURL} link={link} />
+          <UserCard name={name} role={role} imageURL={imageURL} link={link} />
+          <UserCard name={name} role={role} imageURL={imageURL} link={link} />
+          <UserCard name={name} role={role} imageURL={imageURL} link={link} />
+          <UserCard name={name} role={role} imageURL={imageURL} link={link} />
+        </div>
+      </div>);
   });
 
 

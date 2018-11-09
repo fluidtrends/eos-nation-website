@@ -13,6 +13,7 @@ export const Heading3 = styled.h3`
 export const Heading4 = styled.h4`
   font-family: "SF Pro Display";
 	color: ${props => props.primary ? props.primary : "#FFFFFF"};
+	text-align: ${props => props.center ? "center" : "inherit"};;
 	font-size: 36px;
 	font-weight: bold;
 	letter-spacing: 0.19px;
@@ -21,11 +22,12 @@ export const Heading4 = styled.h4`
 
 export const Body2 = styled.p`
   display: inline;
-	color: ${props => props.primary ? props.primary : "#FFFFFF"};
+	color: ${props => props.primary ? "#324856" : props.secondary ? "#4A746A" : "#FFFFFF"};
 	font-family: "SF Pro Text";
 	font-size: 16px;
-	font-weight: ${props => props.bold ? "bold" : "inherit"};
+	font-weight: ${props => props.bold ? "bold" : props.light ? "300" : "inherit"};
 	text-decoration: ${props => props.link ? "underline" : "inherit"};
+	text-transform: ${props => props.uppercase ? "uppercase" : "inherit"};;
 	letter-spacing: 0.13px;
 	line-height: 19px;
 `;
