@@ -53,7 +53,7 @@ export const Heading4 = styled.h4`
 
 export const Body2 = styled.p`
   display: inline;
-	color: ${props => props.primary ? "#324856" : props.secondary ? "#4A746A" : "#FFFFFF"};
+	color: ${props => props.primary ? "#324856" : props.secondary ? "#4A746A" : props.color ? props.color : "#FFFFFF"};
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	font-weight: ${props => props.bold ? "bold" : props.light ? "300" : "inherit"};
@@ -79,4 +79,10 @@ export const FooterWrapper = styled.div`
 	@media (max-width: 780px){
 	  padding: 20px;
 	}
+`;
+
+export const UserProfileSmall = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 `;

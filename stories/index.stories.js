@@ -6,6 +6,7 @@ import '../assets/sanfrancisco-font.css';
 
 import VerticalCard from '../chunks/intro/components/VerticalCard';
 import UserCard from '../chunks/intro/components/UserCard';
+import TwitterCard from '../chunks/intro/components/TwitterCard';
 import Calendar from '../chunks/intro/components/Calendar';
 import Footer from '../chunks/intro/components/Footer';
 import { Heading4 } from '../chunks/intro/components/StyledComponents';
@@ -92,6 +93,48 @@ storiesOf('Cards', module)
           <UserCard name={name} role={role} imageURL={imageURL} link={link} />
         </div>
       </div>);
+  })
+  .add('Twitter Card', () => {
+    const name = text("@Name", "@einarinau");
+    const author = text("Name", "Eninari Naukkarien");
+    const date = text("Date", "Aug 8, 2018");
+    const time = text("Time", "4:05 PM");
+    const kudos = text("Kudos", "5");
+    const description = text("Time", "@eos_nation is awesome, great event.");
+    const userURL = text("User Image", "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg");
+    const link = text("Read more link", "http://google.com");
+
+    return (
+      <div className="storybook-container">
+        <Heading4 center className="section-header padding-top-large margin-bottom-large">
+          Why we love EOSNation
+        </Heading4>
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+      </div>
+    );
   });
 
 
@@ -196,7 +239,8 @@ storiesOf('Demo page', module)
     return (
       <div className="storybook-container padding-top-large">
         <h2 className="section-header text-align-center margin-bottom-large">Why vote for us?</h2>
-        <div className="padding-bottom-large align-center values-wrapper" style={{ display: "flex", maxWidth:"1400px" }}>
+        <div className="padding-bottom-large align-center values-wrapper"
+             style={{ display: "flex", maxWidth: "1400px" }}>
           <VerticalCard
             title={"Community"}
             description={"We're dedicated to fostering the EOS platform through reliable and efficient block production and community engagement."}

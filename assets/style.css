@@ -317,6 +317,12 @@ table {
   width: 380px;
 }
 
+.twitter-card-container{
+  border-radius: 5px;
+  border: 1px solid #324856;
+  width: 350px;
+}
+
 @media (max-width: 1350px) {
   .user-card-wrapper {
     max-width: 880px;
@@ -396,4 +402,8 @@ table {
     margin-right: auto;
     display: flex;
   }
+}
+
+.no-text-shadow {
+  box-shadow: none!important;
 }
