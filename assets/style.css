@@ -301,6 +301,8 @@ table {
 .user-card-wrapper {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1290px;
+  padding-left: 50px;
 }
 
 .user-card-container {
@@ -308,15 +310,27 @@ table {
   width: 380px;
 }
 
-@media (max-width: 480px) {
-  .user-card-container {
-    width: 250px;
+@media (max-width: 1350px) {
+  .user-card-wrapper {
+    max-width: 880px;
   }
 }
-@media (max-width: 850px) {
-  .user-card-container {
-    width: 300px;
+
+@media (max-width: 920px) {
+  .user-card-wrapper {
+    max-width: 430px;
   }
+}
+
+@media (max-width: 480px) {
+  /*.user-card-container {*/
+    /*width: 250px;*/
+  /*}*/
+}
+@media (max-width: 850px) {
+  /*.user-card-container {*/
+    /*width: 300px;*/
+  /*}*/
 }
 
 .user-description {

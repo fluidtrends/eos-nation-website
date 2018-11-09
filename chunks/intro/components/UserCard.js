@@ -11,7 +11,7 @@ class UserCard extends React.PureComponent {
           <GridCell>
             <img src={imageURL} style={{ width: "120px", height: "120px", borderRadius: "50%" }} />
           </GridCell>
-          <GridCell span="8">
+          <GridCell span="8" tablet="2">
             <div className="padding-left user-description">
               <span>
               <Body2 uppercase bold primary>{name}</Body2>
