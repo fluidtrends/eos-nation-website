@@ -28,7 +28,7 @@ export class CalendarItem extends Component {
         borderBottom: 'solid gray 1px',
       }}>
         <div style={{
-          width: '10%',
+          width: '15%',
           display: 'inline-block',
           color: '#fff',
           padding: '20px',
@@ -36,7 +36,6 @@ export class CalendarItem extends Component {
         }}>
           <div style={{
             fontSize: '86px',
-            fontFamily: 'SF Pro Display',
             textAlign: 'center',
             textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)"
           }}>
@@ -44,7 +43,6 @@ export class CalendarItem extends Component {
           </div>
           <div style={{
             fontSize: '24px',
-            fontFamily: 'SF Pro Display',
             textAlign: 'center',
             textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)"
           }}>

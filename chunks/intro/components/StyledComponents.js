@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const Heading3 = styled.h3`
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;
 	color: ${props => props.primary ? props.primary : "#FFFFFF"};
 	font-size: 26px;
 	letter-spacing: 0.38px;
@@ -11,7 +11,7 @@ export const Heading3 = styled.h3`
 `;
 
 export const Heading4 = styled.h4`
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;
 	color: ${props => props.primary ? props.primary : "#FFFFFF"};
 	text-align: ${props => props.center ? "center" : "inherit"};;
 	font-size: 36px;
@@ -23,7 +23,7 @@ export const Heading4 = styled.h4`
 export const Body2 = styled.p`
   display: inline;
 	color: ${props => props.primary ? "#324856" : props.secondary ? "#4A746A" : "#FFFFFF"};
-	font-family: "SF Pro Text";
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	font-weight: ${props => props.bold ? "bold" : props.light ? "300" : "inherit"};
 	text-decoration: ${props => props.link ? "underline" : "inherit"};

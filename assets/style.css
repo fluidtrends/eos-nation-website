@@ -1,3 +1,7 @@
+html, body, div {
+  font-family: "Roboto", sans-serif;
+}
+
 .cards-wrapper {
   max-width: 1400px;
   margin-left: auto;
@@ -15,13 +19,14 @@
 }
 
 .card-description {
-  min-width: 270px;
+  min-width: 280px;
 }
 
 .card-image-icon {
   font-size: 6.5rem;
   color: #fff;
   margin-top: 25px;
+  /*margin-top: 10px;*/
 }
 
 .card-image-wrapper {
@@ -33,16 +38,9 @@
   border-radius: 50%;
 }
 
-/*typography*/
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
-
 .sub-header {
   color: #324856;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.38px;
@@ -52,7 +50,7 @@
 
 .section-header {
   color: #324856;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 46px;
   font-weight: bold;
   letter-spacing: 0.66px;
@@ -62,7 +60,7 @@
 
 .paragraph {
   color: #324856;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 22px;
   letter-spacing: 0.19px;
   line-height: 30px;
@@ -83,6 +81,10 @@
 
 .padding-top-large {
   padding-top: 50px;
+}
+
+.padding-bottom-large {
+  padding-bottom: 50px;
 }
 
 .padding-left {
@@ -163,7 +165,7 @@
   border-radius: 5px;
   color: #FFFFFF;
   display: inherit;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 16px;
   letter-spacing: 0.38px;
   line-height: 3.8;
@@ -206,7 +208,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -249,7 +250,7 @@ table {
 
 .footer-email-input {
   height: 59px;
-  font-family: "SF Pro Text";
+  font-family: 'Roboto', sans-serif;;
   font-size: 16px;
   display: inline-block;
   width: 280px;
@@ -323,12 +324,13 @@ table {
 
 @media (max-width: 480px) {
   /*.user-card-container {*/
-    /*width: 250px;*/
+  /*width: 250px;*/
   /*}*/
 }
+
 @media (max-width: 850px) {
   /*.user-card-container {*/
-    /*width: 300px;*/
+  /*width: 300px;*/
   /*}*/
 }
 

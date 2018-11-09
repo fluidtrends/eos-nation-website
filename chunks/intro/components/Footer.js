@@ -12,7 +12,7 @@ class Footer extends React.PureComponent {
       <FooterWrapper>
         <Grid>
           <GridCell span="2" phone="12" tablet="3">
-            <img src={footerLogo} />
+            <img src={footerLogo} style={{width:"168px",height:"176px"}}/>
           </GridCell>
           <GridCell span="5" phone="12" tablet="5">
             <GridInner>
