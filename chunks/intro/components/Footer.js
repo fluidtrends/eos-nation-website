@@ -12,7 +12,7 @@ class Footer extends React.PureComponent {
       <FooterWrapper>
         <Grid>
           <GridCell span="2" phone="12" tablet="3">
-            <img src={footerLogo} style={{width:"168px",height:"176px"}}/>
+            <img src={footerLogo} className="footer-logo" style={{width:"168px",height:"176px"}}/>
           </GridCell>
           <GridCell span="5" phone="12" tablet="5">
             <GridInner>
@@ -21,9 +21,7 @@ class Footer extends React.PureComponent {
                   <a href={url} target="_blank" className="footer-link"><Body2>{text}</Body2></a>
                 </GridCell>
               ))}
-              <GridCell span="12" style={
-                { display: "flex", justifyContent: "space-between", width: '75%', paddingTop: "20px" }
-              }>
+              <GridCell span="12" className="footer-social-links">
                 <a href={""} target="_blank">
                   <Icon className="fab fa-facebook-f facebook-custom-icon" /></a>
                 <a href={""} target="_blank">

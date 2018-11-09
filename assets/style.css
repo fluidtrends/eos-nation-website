@@ -287,6 +287,13 @@ table {
   text-decoration: none;
 }
 
+.footer-social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 75% !important;
+  padding-top: 20px;
+}
+
 .footer-link:hover {
   text-decoration: underline;
 }
@@ -343,19 +350,52 @@ table {
 }
 
 @media (max-width: 780px) {
-  .values-wrapper{
+  .calendar-social-links {
+    text-align: left;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+
+  .values-wrapper {
     flex-direction: column;
   }
-  .card-container{
+
+  .card-container {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .footer-email-input{
-    width: 100%;
+
+  .footer-email-input {
+    width: calc(100% - 40px);
   }
-  .footer-subscribe-btn{
+
+  .footer-subscribe-btn {
     padding: 0 20px;
-    width: 100%;
+    width: calc(100% - 40px);
+  }
+
+  .section-header {
+    padding: 20px;
+  }
+
+  .footer-social-links {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    padding-bottom: 20px;
+  }
+
+  .footer-social-links a {
+    /*margin-top: 20px;*/
+    margin-right: 20px;
+  }
+
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
 }

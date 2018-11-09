@@ -10,6 +10,37 @@ export const Heading3 = styled.h3`
 	font-weight: normal;
 `;
 
+export const CalenderItemWrapper = styled.div`
+  display: flex;
+  border-bottom: solid gray 1px;
+	@media (max-width: 780px){
+	  flex-direction: column;
+	 }
+`;
+
+export const CalenderItemDate = styled.div`
+  width: 15%;
+  display: inline-block;
+  color: #fff;
+  padding: 20px;
+  border-right: solid gray 1px;
+	@media (max-width: 780px){
+    border-right: none;
+	  border-bottom: solid gray 1px;
+	  width: calc(100% - 40px);
+	}
+`;
+
+export const CalenderItemContent = styled.div`
+  width: calc(90% - 141px);
+  display: inline-block; 
+  padding: 40px;
+  color: #fff;
+	@media (max-width: 780px){
+    width: calc(90% - 40px);
+	}
+`;
+
 export const Heading4 = styled.h4`
   font-family: 'Roboto', sans-serif;
 	color: ${props => props.primary ? props.primary : "#FFFFFF"};
@@ -45,4 +76,7 @@ export const FooterWrapper = styled.div`
   color: ${props => props.primary ? props.primary : "#fff"};
 	background: ${props => props.primary ? props.primary : "#324856"};
 	padding: 50px;
+	@media (max-width: 780px){
+	  padding: 20px;
+	}
 `;
