@@ -10,7 +10,7 @@ https://fluidtrends.github.io/eos-nation-website
 - [ ] Carousel Container
 - [X] Calendar
 - [X] User Card
-- [ ] Twitter Card
+- [X] Twitter Card
 - [X] Footer
 
 

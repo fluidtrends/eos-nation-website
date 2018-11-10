@@ -11,6 +11,51 @@ import Calendar from '../chunks/intro/components/Calendar';
 import Footer from '../chunks/intro/components/Footer';
 import { Heading4 } from '../chunks/intro/components/StyledComponents';
 
+const TwitterSectionStory = () => {
+  const name = text("@Name", "@einarinau");
+  const author = text("Name", "Eninari Naukkarien");
+  const date = text("Date", "Aug 8, 2018");
+  const time = text("Time", "4:05 PM");
+  const kudos = text("Kudos", "5");
+  const description = text("Time", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.");
+  const userURL = text("User Image", "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg");
+  const link = text("Read more link", "http://google.com");
+
+  return (
+    <div className="storybook-container">
+      <Heading4 center primary className="section-header padding-top-large margin-bottom-large">
+        Why we love EOSNation
+      </Heading4>
+      <div className="twitter-wrapper align-center">
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+        <TwitterCard
+          link={link} userURL={userURL} name={name} time={time} date={date}
+          author={author} kudos={kudos} description={description}
+        />
+      </div>
+    </div>
+  );
+};
+
 storiesOf('Cards', module)
   .addDecorator(withKnobs)
   .add('Vertical Card', () => {
@@ -94,48 +139,7 @@ storiesOf('Cards', module)
         </div>
       </div>);
   })
-  .add('Twitter Card', () => {
-    const name = text("@Name", "@einarinau");
-    const author = text("Name", "Eninari Naukkarien");
-    const date = text("Date", "Aug 8, 2018");
-    const time = text("Time", "4:05 PM");
-    const kudos = text("Kudos", "5");
-    const description = text("Time", "@eos_nation is awesome, great event.");
-    const userURL = text("User Image", "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg");
-    const link = text("Read more link", "http://google.com");
-
-    return (
-      <div className="storybook-container">
-        <Heading4 center className="section-header padding-top-large margin-bottom-large">
-          Why we love EOSNation
-        </Heading4>
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-      </div>
-    );
-  });
+  .add('Twitter Card Section', TwitterSectionStory);
 
 
 const slug = text("Event slug", "582 EOS");
@@ -267,6 +271,12 @@ storiesOf('Demo page', module)
           />
         </div>
 
+        <div className="margin-top-large margin-bottom-large">
+          <h2 className="section-header text-align-center margin-bottom-large">EOS Nation Sponsored Projects &
+            Events</h2>
+          <Calendar events={calendarEvents} />
+        </div>
+
         <div className="team-section">
           <Heading4 center className="section-header padding-top-large margin-bottom-large">
             Meet the Team
@@ -282,11 +292,7 @@ storiesOf('Demo page', module)
           </div>
         </div>
 
-        <div className="margin-top-large margin-bottom-large">
-          <h2 className="section-header text-align-center margin-bottom-large">EOS Nation Sponsored Projects &
-            Events</h2>
-          <Calendar events={calendarEvents} />
-        </div>
+        {TwitterSectionStory()}
 
         <Footer links={links} />
 

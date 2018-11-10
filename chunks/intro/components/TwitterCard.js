@@ -1,6 +1,9 @@
 import React from 'react';
 import { Grid, GridCell, GridInner } from 'rmwc';
 import { Body2, Icon, UserProfileSmall } from './StyledComponents';
+import Truncate from "react-truncate";
+
+const DEFAULT_MAX_DESCRIPTION_LINES = 2;
 
 class TwitterCard extends React.PureComponent {
   render() {
@@ -13,18 +16,22 @@ class TwitterCard extends React.PureComponent {
           </GridCell>
           <GridCell span="10">
             <GridInner>
-              <GridCell span="9">
+              <GridCell span="9" style={{ marginTop: '5px', marginLeft: '10px' }}>
                 <Body2 bold primary>{name}</Body2>
                 <Body2 bold primary>{author}</Body2>
               </GridCell>
               <GridCell span="3">
-                <Icon className="fab fab fa-twitter no-text-shadow" />
+                <Icon className="fab fab fa-twitter no-text-shadow" style={{fontSize:"25px"}}/>
               </GridCell>
             </GridInner>
           </GridCell>
-          <GridCell span="12">
+          <GridCell span="12" style={{ marginTop: '-15px' }}>
             <a href={link} style={{ textDecoration: 'none' }}>
-              <Body2 primary>{description}</Body2>
+              <Body2 primary>
+                <Truncate lines={DEFAULT_MAX_DESCRIPTION_LINES} ellipsis={<span>...</span>}>
+                  {description}
+                </Truncate>
+              </Body2>
             </a>
           </GridCell>
           <GridCell span="12">
