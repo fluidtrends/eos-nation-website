@@ -1,6 +1,6 @@
-body a{
-  text-decoration: none;
-  }
+html, body, div {
+  font-family: "Roboto", sans-serif;
+}
 
 .cards-wrapper {
   max-width: 1400px;
@@ -19,14 +19,14 @@ body a{
 }
 
 .card-description {
-  min-width: 270px;
+  min-width: 280px;
 }
 
 .card-image-icon {
   font-size: 6.5rem;
   color: #fff;
-  /*margin-top: 15px;*/
-  margin-top: 10px;
+  margin-top: 25px;
+  /*margin-top: 10px;*/
 }
 
 .card-image-wrapper {
@@ -97,7 +97,7 @@ align-items: center;
 
 .sub-header {
   color: #324856;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.38px;
@@ -107,7 +107,7 @@ align-items: center;
 
 .section-header {
   color: #324856;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 46px;
   font-weight: bold;
   letter-spacing: 0.66px;
@@ -117,7 +117,7 @@ align-items: center;
 
 .paragraph {
   color: #324856;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 22px;
   letter-spacing: 0.19px;
   line-height: 30px;
@@ -146,6 +146,22 @@ color: white;
   padding: 0 !important;
 }
 
+.padding-medium {
+  padding: 20px !important;
+}
+
+.padding-top-large {
+  padding-top: 50px;
+}
+
+.padding-bottom-large {
+  padding-bottom: 50px;
+}
+
+.padding-left {
+  padding-left: 20px !important;
+}
+
 .padding-horizontal {
   padding-left: 10px !important;
   padding-right: 10px !important;
@@ -168,12 +184,20 @@ color: white;
   margin-bottom: 50px;
 }
 
+.margin-bottom-medium {
+  margin-bottom: 20px;
+}
+
 .margin-left-medium {
   margin-left: 20px;
 }
 
 .margin-right-medium {
   margin-right: 20px;
+}
+
+.margin-right-large {
+  margin-right: 50px;
 }
 
 .margin-right-small {
@@ -240,15 +264,14 @@ color: white;
   border-radius: 5px;
   color: #FFFFFF;
   display: inherit;
-  font-family: "SF Pro Display";
+  font-family: 'Roboto', sans-serif;;
   font-size: 16px;
   letter-spacing: 0.38px;
-  line-height: 19px;
+  line-height: 3.8;
   text-align: center;
 }
 
 .btn.btn-link {
-  line-height: 3.8;
   text-decoration: none;
 }
 
@@ -284,7 +307,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -315,4 +337,181 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.input {
+  height: 60px;
+  padding: 0 20px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.footer-email-input {
+  height: 59px;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 16px;
+  display: inline-block;
+  width: 280px;
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.footer-subscribe-btn {
+  width: 200px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  display: inline-block;
+}
+
+@media (max-width: 1330px) {
+  .footer-email-input {
+    display: block;
+    width: 80%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .footer-subscribe-btn {
+    margin-top: 20px;
+    display: block;
+    width: 86%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 75% !important;
+  padding-top: 20px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.team-section {
+  background: url("team_background.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #324856;
+}
+
+.user-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1290px;
+  padding-left: 50px;
+}
+
+.user-card-container {
+  background: #fff;
+  width: 380px;
+}
+
+.twitter-card-container{
+  border-radius: 5px;
+  border: 1px solid #324856;
+  width: 350px;
+  height: 190px;
+}
+
+.twitter-wrapper{
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 50px;
+  justify-content: space-around;
+}
+
+@media (max-width: 1350px) {
+  .user-card-wrapper {
+    max-width: 880px;
+  }
+}
+
+@media (max-width: 920px) {
+  .user-card-wrapper {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*.user-card-container {*/
+  /*width: 250px;*/
+  /*}*/
+}
+
+@media (max-width: 850px) {
+  /*.user-card-container {*/
+  /*width: 300px;*/
+  /*}*/
+}
+
+.user-description {
+  margin: 10px 0;
+  height: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 780px) {
+  .calendar-social-links {
+    text-align: left;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+
+  .values-wrapper {
+    flex-direction: column;
+  }
+
+  .card-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+
+  .footer-email-input {
+    width: calc(100% - 40px);
+  }
+
+  .footer-subscribe-btn {
+    padding: 0 20px;
+    width: calc(100% - 40px);
+  }
+
+  .section-header {
+    padding: 20px;
+  }
+
+  .footer-social-links {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    padding-bottom: 20px;
+  }
+
+  .footer-social-links a {
+    /*margin-top: 20px;*/
+    margin-right: 20px;
+  }
+
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+.no-text-shadow {
+  box-shadow: none!important;
 }

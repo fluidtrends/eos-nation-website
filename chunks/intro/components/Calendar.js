@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import { Grid, GridCell, GridInner } from 'rmwc';
 import '@material/layout-grid/dist/mdc.layout-grid.css';
-import { Body2, Heading3, Heading4, Icon } from './StyledComponents';
+import {
+  Body2,
+  CalenderItemContent,
+  CalenderItemDate,
+  CalenderItemWrapper,
+  Heading3,
+  Heading4,
+  Icon
+} from './StyledComponents';
 
 export class CalendarItem extends Component {
   render() {
@@ -23,20 +31,10 @@ export class CalendarItem extends Component {
     }
 
     return (
-      <div style={{
-        display: 'flex',
-        borderBottom: 'solid gray 1px',
-      }}>
-        <div style={{
-          width: '10%',
-          display: 'inline-block',
-          color: '#fff',
-          padding: '20px',
-          borderRight: 'solid gray 1px'
-        }}>
+      <CalenderItemWrapper>
+        <CalenderItemDate>
           <div style={{
             fontSize: '86px',
-            fontFamily: 'SF Pro Display',
             textAlign: 'center',
             textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)"
           }}>
@@ -44,14 +42,13 @@ export class CalendarItem extends Component {
           </div>
           <div style={{
             fontSize: '24px',
-            fontFamily: 'SF Pro Display',
             textAlign: 'center',
             textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)"
           }}>
             {`${new Intl.DateTimeFormat("en-US", { month: "short" }).format(date)} ${date.getFullYear()}`}
           </div>
-        </div>
-        <div style={{ width: 'calc(90% - 141px)', display: 'inline-block', padding: '40px', color: '#fff', }}>
+        </CalenderItemDate>
+        <CalenderItemContent>
           <Grid className="padding-remove">
             <GridCell span="12">
               <GridInner>
@@ -64,14 +61,14 @@ export class CalendarItem extends Component {
                 <GridCell span="2">
                   {metaInfo.length ? metaInfo[0] : <Body2>-</Body2>}
                 </GridCell>
-                <GridCell span="7">
+                <GridCell desktop="7" phone="2">
                   <GridInner>
                     {metaInfo.length > 1 ? metaInfo.map((info, index) => (
                       index !== 0 ? <GridCell span="6">{metaInfo[index]}</GridCell> : null
                     )) : <Body2>-</Body2>}
                   </GridInner>
                 </GridCell>
-                <GridCell span="3" className="text-align-right" style={{marginLeft:"-20px"}}>
+                <GridCell span="3" phone="6" className="text-align-right calendar-social-links" style={{ marginLeft: "-20px" }}>
                   {facebookLink ?
                     <span><a className="margin-left-medium" href={facebookLink} target="_blank">
                       <Icon className="fab fa-facebook-f facebook-custom-icon" /></a></span> : null
@@ -88,8 +85,8 @@ export class CalendarItem extends Component {
               </GridInner>
             </GridCell>
           </Grid>
-        </div>
-      </div>
+        </CalenderItemContent>
+      </CalenderItemWrapper>
     );
   }
 }

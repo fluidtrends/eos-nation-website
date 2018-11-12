@@ -45,6 +45,7 @@
     "react-vivus": "0.0.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.0.3",
+    "twitter": "^1.7.1",
     "vivus": "^0.4.4"
   }
 }

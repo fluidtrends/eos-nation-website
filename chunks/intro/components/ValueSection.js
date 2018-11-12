@@ -18,7 +18,6 @@ class ValueSection extends Component {
 
   renderComponent() {
     const { values, title } = this.props;
-    console.log(values);
     return (
       <div>
         <h2 className="section-header text-align-center">{title}</h2>
@@ -26,8 +25,8 @@ class ValueSection extends Component {
           {values.map(({ iconName, ...remainingProps }) => (
             <VerticalCard
               image={() => {
-                // return <i className={`fas fa-${iconName} card-image-icon`} />;
-                return <i className="material-icons card-image-icon">{iconName}</i>;
+                return <i className={`fas fa-${iconName} card-image-icon`} />;
+                // return <i className="material-icons card-image-icon">{iconName}</i>;
               }}
               {...remainingProps}
             />))}
