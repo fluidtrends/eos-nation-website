@@ -166,7 +166,6 @@ storiesOf('Cards', module)
         </div>
       </div>);
   })
-  .add('Twitter Card Section', TwitterSectionStory);
 
   .add ('Carousel', () => {
     const title = text("Title", "Community");
