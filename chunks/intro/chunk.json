@@ -14,24 +14,18 @@
         "feature-integrations": "local://platform/integrations"
       },
       "cover": {
-        "image": "castle.jpg",
+        "image": "cover.r.png",
         "backgroundColor": "#ffffff",
         "align": "bottom",
-        "opacity": 0.5,
+        "opacity": 0.2,
         "navigation": true,
-        "title": "Your Code Monkey Days Are Over.",
+        "title": "Eos Nation",
         "subtitle": "Imagine A World Beyond The Code And Start Creating.",
         "type": "default",
         "primaryActionTitle": "Get Started",
         "primaryActionLink": "/start"
       },
       "components": {
-        "intro": {
-          "source": "summary",
-          "text": "local://intro",
-          "image": "logo.gif",
-          "textColor": "#37474F"
-        },
         "pillars": {
           "source": "valueSection",
           "values": [
