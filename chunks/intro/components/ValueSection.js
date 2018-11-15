@@ -19,7 +19,7 @@ class ValueSection extends Component {
   renderComponent() {
     const { values, title } = this.props;
     return (
-      <div>
+      <div style={{ padding: '40px 0' }}>
         <h2 className="section-header text-align-center">{title}</h2>
         <div className="cards-wrapper">
           {values.map(({ iconName, ...remainingProps }) => (

@@ -3,8 +3,6 @@ import { Grid, GridCell, GridInner } from 'rmwc';
 import { Body2, FooterWrapper, Icon } from './StyledComponents';
 import footerLogo from '../../../assets/eosnation_footer_logo.png';
 
-// import '@material/layout-grid/dist/mdc.layout-grid.css';
-
 class Footer extends React.PureComponent {
   render() {
     const { links } = this.props;

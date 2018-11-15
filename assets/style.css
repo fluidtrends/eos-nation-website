@@ -3,18 +3,16 @@ html, body, div {
 }
 
 .cards-wrapper {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
   padding: 5px 50px;
-  justify-content: space-around;
 }
 
 .card-container {
   background: #EBEDEE;
-  padding: 50px;
-  margin: 0 50px;
+  padding: 10px 50px;
+  max-width: 360px;
+  margin: 10px 40px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -351,6 +349,7 @@ table {
   height: 59px;
   font-family: 'Roboto', sans-serif;;
   font-size: 16px;
+  cursor: pointer;
   display: inline-block;
   width: 280px;
   border-right-width: 0;
@@ -398,7 +397,6 @@ table {
 }
 
 .team-section {
-  background: url("team_background.png");
   background-size: cover;
   background-position: center;
   background-color: #324856;
