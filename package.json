@@ -36,7 +36,7 @@
     "font-awesome": "^4.7.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-dom-chunky": "^0.9.136",
+    "react-dom-chunky": "^0.9.140",
     "react-spring": "^5.5.1",
     "react-truncate": "^2.4.0",
     "react-vivus": "0.0.2",
