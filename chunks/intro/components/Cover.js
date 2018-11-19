@@ -68,6 +68,8 @@ export default class Intro extends Component {
     return <React.Fragment>
       <Typography use='headline4' className={'title'}>
         BUILDING OUR FUTURE
+      </Typography>
+      <Typography use='headline4' className={'title'} style={{marginBottom: '30px'}}>
         ONE BLOCK AT A TIME
       </Typography>
     </React.Fragment>
