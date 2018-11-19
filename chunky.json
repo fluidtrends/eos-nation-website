@@ -17,8 +17,8 @@
   ],
   "provisioning": {},
   "theme": {
-    "logoImage": "eosnation_footer_logo.png",
-    "logoLightImage": "eosnation_footer_logo.png",
+    "logoImage": "header-logo.png",
+    "logoLightImage": "header-logo.png",
     "headerColor": "#FF5722",
     "textColor": "#546E7A",
     "linkColor": "#0288D1",
