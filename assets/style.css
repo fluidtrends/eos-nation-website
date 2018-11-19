@@ -5,12 +5,13 @@ html, body, div {
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 5px 50px;
 }
 
 .card-container {
   background: #EBEDEE;
-  padding: 10px 50px;
+  padding: 20px 50px;
   max-width: 360px;
   margin: 10px 40px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -306,8 +307,8 @@ table {
 .user-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1290px;
   padding-left: 50px;
+  justify-content: center;
 }
 
 .user-card-container {
@@ -328,12 +329,6 @@ table {
   flex-wrap: wrap;
   padding: 5px 50px;
   justify-content: space-around;
-}
-
-@media (max-width: 1350px) {
-  .user-card-wrapper {
-    max-width: 880px;
-  }
 }
 
 @media (max-width: 920px) {

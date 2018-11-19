@@ -112,6 +112,68 @@
             }
           ]
         },
+        "team": {
+          "source": "userSection",
+          "users": [
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            },
+            {
+              "name": "Denis Carriere",
+              "role": "cto",
+              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
+              "link": "http://google.com"
+            }
+          ],
+          "title": "Why vote for us?",
+          "textColor": "#ffcc000",
+          "backgroundColor": "#FAFAFA"
+        },
         "feedback": {
           "source": "twitterSection",
           "users": [
@@ -186,70 +248,8 @@
               "link": "http://google.com"
             }
           ],
-          "title": "Why vote for us?",
-          "textColor": "#ffcc000",
-          "backgroundColor": "#FAFAFA"
-        },
-        "team": {
-          "source": "userSection",
-          "users": [
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            },
-            {
-              "name": "Denis Carriere",
-              "role": "cto",
-              "imageURL": "https://uploads-ssl.webflow.com/5b654eb2884ddb35daa17709/5b67a4f75fc94c6da74899bf_DenisCarriere.jpg",
-              "link": "http://google.com"
-            }
-          ],
-          "title": "Why vote for us?",
-          "textColor": "#ffcc000",
+          "title": "Twitter Feed",
+          "textColor": "#2b4957",
           "backgroundColor": "#FAFAFA"
         },
         "footer": {
