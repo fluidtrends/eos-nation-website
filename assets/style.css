@@ -409,3 +409,11 @@ table {
 .no-text-shadow {
   box-shadow: none!important;
 }
+
+.title {
+  text-align: center;
+  padding: 20px;
+  font-family: 'GAMECUBEN';
+  font-size: 32px;
+  color: #324856;
+}

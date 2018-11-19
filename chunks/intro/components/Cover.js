@@ -30,7 +30,7 @@ export default class Intro extends Component {
       position: "relative",
       alignItems: "center",
       background: "rgba(0,0,0,0.7)",
-      backgroundImage: 'linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(231, 231, 231, 0.1), rgba(207, 207, 207, 0.1), rgba(184, 184, 184, 0.1), rgba(161, 161, 161, 0.1))',
+      backgroundImage: 'linear-gradient(90deg, #EEEEEE 18.96%, #000000 100%)',
       flexDirection: "column",
       justifyContent: "center"
     }}>
@@ -65,14 +65,12 @@ export default class Intro extends Component {
   }
 
   title() {
-    return <Typography use='headline4' className="title" style={{
-      textAlign: 'center',
-      color: '#fafafa',
-      padding: "20px"
-    }}>
-    The Fastest Way To Become A Coder.
-    </Typography>
-
+    return <React.Fragment>
+      <Typography use='headline4' className={'title'}>
+        BUILDING OUR FUTURE
+        ONE BLOCK AT A TIME
+      </Typography>
+    </React.Fragment>
   }
 
   subtitle() {

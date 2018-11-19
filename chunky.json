@@ -1,8 +1,8 @@
 {
-  "name": "Chunky",
+  "name": "EOS Nation",
   "template": "default",
-  "env": "dev",
-  "id": "io.chunky",
+  "env": "production",
+  "id": "io.eosnation",
   "androidSdkDir": "~/Library/Android/sdk",
   "sections": {
     "start": {
@@ -38,6 +38,7 @@
   },
   "info": {
     "copyright": "© 2018",
-    "watermark": "Created with Chunky."
+    "watermark": "Created with Chunky.",
+    "title": "EOS Nation"
   }
 }
