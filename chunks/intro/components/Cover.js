@@ -59,8 +59,8 @@ export default class Intro extends Component {
         {this.title()}
         {this.subtitle()}
         </div>
-      {this.icons()}
       </div>
+        {this.icons()}
     </div>
   }
 
@@ -90,7 +90,7 @@ export default class Intro extends Component {
 
   icons() {
     const socialMediaLinks = this.props.footer.socialMediaLinks
-    return [<div style={{ display: 'flex', position: 'absolute', right: '-60px', paddingRight: 100, paddingBottom: 30 }}>
+    return [<div style={{ display: 'flex', position: 'absolute', right: 20 }}>
       <Components.SocialIcons iconColor={'#ffffff'} vertical iconColorHover={'#2c4858'} size={24} isSmallScreen={this.props.isSmallScreen} socialMediaLinks={socialMediaLinks}/>
     </div>]
   }
