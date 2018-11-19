@@ -1,4 +1,5 @@
 import React from 'react';
+import { Component, Components } from 'react-dom-chunky'
 import { Grid, GridCell, GridInner } from 'rmwc';
 import { Body2, FooterWrapper, Icon } from './StyledComponents';
 import footerLogo from '../../../assets/eosnation_footer_logo.png';
@@ -19,22 +20,7 @@ class Footer extends React.PureComponent {
                   <a href={url} target="_blank" className="footer-link"><Body2>{text}</Body2></a>
                 </GridCell>
               ))}
-              <GridCell span="12" className="footer-social-links">
-                <a href={""} target="_blank">
-                  <Icon className="fab fa-facebook-f facebook-custom-icon" /></a>
-                <a href={""} target="_blank">
-                  <Icon className="fab fab fa-twitter" /></a>
-                <a href={""} target="_blank">
-                  <Icon className="fab fa-meetup" /></a>
-                <a href={""} target="_blank">
-                  <Icon className="fab fa-youtube" /></a>
-                <a href={""} target="_blank">
-                  <Icon className="fab fa-telegram" /></a>
-                <a href={""} target="_blank">
-                  <Icon className="fab fa-medium" /></a>
-                <a href={""} target="_blank">
-                  <Icon className="fab fa-youtube" /></a>
-              </GridCell>
+              <Components.SocialIcons socialMediaLinks={this.props.footer.socialMediaLinks} size={24}/>
             </GridInner>
           </GridCell>
           <GridCell span="5" phone="12" tablet="12">
