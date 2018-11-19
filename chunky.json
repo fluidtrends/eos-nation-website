@@ -28,6 +28,7 @@
     "primaryColor": "#0097A7",
     "statusBarLight": false,
     "navigationColor": "#2c4858",
+    "stickyNavigation": true,
     "navigationTintColor": "#fff",
     "backgroundColor": "#999999",
     "footerTintColor": "#CFD8DC",
