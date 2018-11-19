@@ -323,7 +323,6 @@
             "source": "feature",
             "text": "github://fluidtrends/carmel/content/product/stakeholders/chris",
             "image": "learning.png",
-            "actionTitle": "Learn more about Chris",
             "backgroundColor": "#ffffff",
             "textColor": "#0686d8",
             "animation": true
