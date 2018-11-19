@@ -310,8 +310,8 @@
         "subtitle": "We are a group of dedicated, passionate and ambitious individuals aiming to contribute positively to the preservation of the EOS platform and its community.",
         "subtitleStyle": {
           "textAlign": "center",
-          "marginLeft": "200px",
-          "marginRight": "200px"
+          "marginLeft": "150px",
+          "marginRight": "150px"
         },
         "type": "default",
         "image": "mountains.png"
