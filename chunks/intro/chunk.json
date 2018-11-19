@@ -15,6 +15,13 @@
         "feature-devops": "local://platform/devops",
         "feature-integrations": "local://platform/integrations"
       },
+      "extendedMenu": [
+        {
+          "id": "about",
+          "title": "About us",
+          "path": "/about"
+        }
+      ],
       "xcover": {
         "image": "cover.r.png",
         "backgroundColor": "#ffffff",
@@ -284,6 +291,30 @@
           "textColor": "#ffcc000",
           "backgroundColor": "#FAFAFA"
         }
+      }
+    },
+    "about": {
+      "title": "About us",
+      "icon": "favorite",
+      "path": "/about",
+      "action": true,
+      "events": {
+        "cover": "system://team"
+      },
+      "cover": {
+        "backgroundColor": "#61AFE1",
+        "align": "bottom",
+        "opacity": 0.6,
+        "navigation": true,
+        "title": "About us",
+        "subtitle": "We are a group of dedicated, passionate and ambitious individuals aiming to contribute positively to the preservation of the EOS platform and its community.",
+        "subtitleStyle": {
+          "textAlign": "center",
+          "marginLeft": "200px",
+          "marginRight": "200px"
+        },
+        "type": "default",
+        "image": "mountains.png"
       }
     }
   }
