@@ -266,7 +266,7 @@ table {
   display: inline-block;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1437px) {
   .footer-email-input {
     display: block;
     width: 80%;
@@ -277,7 +277,8 @@ table {
   .footer-subscribe-btn {
     margin-top: 20px;
     display: block;
-    width: 86%;
+    padding: 0 20px;
+    width: 80%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
@@ -292,6 +293,14 @@ table {
   justify-content: space-between;
   width: 75% !important;
   padding-top: 20px;
+}
+
+.footer-links-wrapper {
+  margin-left: 50px !important;
+}
+
+.footer-social-links a {
+  margin-right: 15px;
 }
 
 .footer-link:hover {
@@ -317,14 +326,14 @@ table {
   width: 380px;
 }
 
-.twitter-card-container{
+.twitter-card-container {
   border-radius: 5px;
   border: 1px solid #324856;
   width: 350px;
   height: 190px;
 }
 
-.twitter-wrapper{
+.twitter-wrapper {
   max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
@@ -364,12 +373,36 @@ table {
   justify-content: space-between;
 }
 
+@media (max-width: 480px) {
+  .footer-links-wrapper {
+    margin-left: initial !important;
+  }
+}
+
+.footer-social-links-mobile {
+  display: none;
+}
+
+.footer-social-links-mobile a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+
 @media (max-width: 780px) {
   .calendar-social-links {
     text-align: left;
     display: flex;
     padding-top: 20px;
     justify-content: space-between;
+  }
+
+  .footer-social-links {
+    display: none !important;
+  }
+
+  .footer-social-links-mobile {
+    display: flex;
   }
 
   .values-wrapper {
@@ -396,13 +429,13 @@ table {
   }
 
   .footer-social-links {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 20px;
   }
 
   .footer-social-links a {
-    /*margin-top: 20px;*/
+    margin-bottom: 15px;
     margin-right: 20px;
   }
 
@@ -414,5 +447,5 @@ table {
 }
 
 .no-text-shadow {
-  box-shadow: none!important;
+  box-shadow: none !important;
 }

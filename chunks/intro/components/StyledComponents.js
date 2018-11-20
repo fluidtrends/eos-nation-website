@@ -73,11 +73,14 @@ export const Icon = styled.i`
 `;
 
 export const FooterWrapper = styled.div`
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   color: ${props => props.primary ? props.primary : "#fff"};
 	background: ${props => props.primary ? props.primary : "#324856"};
-	padding: 50px;
-	@media (max-width: 780px){
-	  padding: 20px;
+	padding: 20px;
+	@media (min-width:480px) and (max-width: 1437px){
+	  padding: 0;
 	}
 `;
 
