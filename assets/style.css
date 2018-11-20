@@ -8,13 +8,15 @@ html, body, div {
   margin-right: auto;
   display: flex;
   padding: 5px 50px;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around !important;
 }
 
 .card-container {
+  max-width: 300px;
   background: #EBEDEE;
   padding: 50px;
-  margin: 0 50px;
+  margin: 0 20px 50px 20px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -351,12 +353,22 @@ table {
   .user-card-wrapper {
     max-width: 430px;
   }
+
+  .twitter-wrapper {
+    margin-left: 0 !important;
+  }
 }
 
 @media (max-width: 480px) {
-  /*.user-card-container {*/
-  /*width: 250px;*/
-  /*}*/
+  .section-header {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    text-align: left !important;
+  }
+
+  .twitter-wrapper {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -377,6 +389,13 @@ table {
   .footer-links-wrapper {
     margin-left: initial !important;
   }
+  .user-card-container{
+    width: 100%;
+  }
+  .user-card-wrapper {
+    padding: 10px;
+    margin-right: -50px;
+  }
 }
 
 .footer-social-links-mobile {
@@ -387,6 +406,15 @@ table {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 25px;
+}
+
+.twitter-wrapper {
+  margin-left: 30px;
+}
+
+.values-wrapper {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media (max-width: 780px) {
@@ -405,10 +433,6 @@ table {
     display: flex;
   }
 
-  .values-wrapper {
-    flex-direction: column;
-  }
-
   .card-container {
     margin-left: 20px;
     margin-right: 20px;
@@ -425,7 +449,8 @@ table {
   }
 
   .section-header {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer-social-links {
@@ -445,9 +470,13 @@ table {
     display: flex;
   }
 
-  .twitter-card-container{
+  .twitter-card-container {
     width: 100%;
-    margin-right: 0!important;
+    margin-right: 0 !important;
+  }
+
+  .twitter-wrapper {
+    margin-right: inherit;
   }
 }
 

@@ -23,34 +23,36 @@ const TwitterSectionStory = () => {
 
   return (
     <div className="storybook-container">
-      <Heading4 center primary className="section-header padding-top-large margin-bottom-large">
+      <Heading4 center primary className="section-header padding-top-large margin-top-large margin-bottom-large">
         Why we love EOSNation
       </Heading4>
-      <div className="twitter-wrapper align-center">
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
-        <TwitterCard
-          link={link} userURL={userURL} name={name} time={time} date={date}
-          author={author} kudos={kudos} description={description}
-        />
+      <div className="align-center">
+        <div className="twitter-wrapper">
+          <TwitterCard
+            link={link} userURL={userURL} name={name} time={time} date={date}
+            author={author} kudos={kudos} description={description}
+          />
+          <TwitterCard
+            link={link} userURL={userURL} name={name} time={time} date={date}
+            author={author} kudos={kudos} description={description}
+          />
+          <TwitterCard
+            link={link} userURL={userURL} name={name} time={time} date={date}
+            author={author} kudos={kudos} description={description}
+          />
+          <TwitterCard
+            link={link} userURL={userURL} name={name} time={time} date={date}
+            author={author} kudos={kudos} description={description}
+          />
+          <TwitterCard
+            link={link} userURL={userURL} name={name} time={time} date={date}
+            author={author} kudos={kudos} description={description}
+          />
+          <TwitterCard
+            link={link} userURL={userURL} name={name} time={time} date={date}
+            author={author} kudos={kudos} description={description}
+          />
+        </div>
       </div>
     </div>
   );
@@ -124,8 +126,8 @@ storiesOf('Cards', module)
     const link = text("Read more link", "http://google.com");
 
     return (
-      <div className="storybook-container team-section">
-        <Heading4 center className="section-header padding-top-large margin-bottom-large">
+      <div className="storybook-container team-section padding-top-large">
+        <Heading4 center className="section-header padding-top-large margin-top-large margin-bottom-large">
           Meet the Team
         </Heading4>
         <div className="user-card-wrapper align-center">
@@ -277,7 +279,7 @@ storiesOf('Demo page', module)
           <Calendar events={calendarEvents} />
         </div>
 
-        <div className="team-section">
+        <div className="team-section padding-top-large">
           <Heading4 center className="section-header padding-top-large margin-bottom-large">
             Meet the Team
           </Heading4>
