@@ -1,9 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { date, text, withKnobs } from '@storybook/addon-knobs';
+import { text, date, withKnobs } from '@storybook/addon-knobs';
+import './style.css';
 import '../assets/style.css';
+import moment from 'moment';
 import '../assets/sanfrancisco-font.css';
 
+
+import CarouselCard from '../components/CarouselCard';
+import CarouselWrapper from '../components/CarouselWrapper';
+import CarouselSlider from '../components/CarouselSlider';
 import VerticalCard from '../chunks/intro/components/VerticalCard';
 import UserCard from '../chunks/intro/components/UserCard';
 import TwitterCard from '../chunks/intro/components/TwitterCard';
@@ -84,6 +90,7 @@ storiesOf('Cards', module)
       </div>
     );
   })
+
   .add('EOS Nation Section', () => {
     return (
       <div>
@@ -117,6 +124,26 @@ storiesOf('Cards', module)
       </div>
     );
   })
+
+  .add ('Carousel Card', () => {
+    const image = text("Image", "https://storage.googleapis.com/multiply-react/public/images/carousel-card-img.png");
+    const title = text("Title", "EOS Meeting");
+    const label = 'Event Date';
+    const defaultValue = new Date('Jan 20 2017');
+    // const groupId = 'GROUP-ID1';
+    // const eventDate = date(label, defaultValue, groupId);
+    const stringTimestamp = date(label, defaultValue)
+    const btnText = text("Button text", "Read more");
+    const btnLink = text("Button link", "https://github.com/grigio/eosfilestore-web");
+    return (
+      <CarouselCard
+      image={image}
+      title={title}
+      date={moment(stringTimestamp).format('DD MM YYYY')}
+      btnText={btnText} btnLink={btnLink}
+      />
+    )
+  })
   .add('User card', () => {
     const name = text("Name", "Denis Carriere");
     const role = text("Role", "cto");
@@ -139,8 +166,26 @@ storiesOf('Cards', module)
         </div>
       </div>);
   })
-  .add('Twitter Card Section', TwitterSectionStory);
 
+  .add ('Carousel', () => {
+    const title = text("Title", "Community");
+    const description = text("Description","To explore and help the eccosystem grow, tools need be developed.  EOS Nation helps users with the need tools")
+    const btnText = text("Button text", "Explore more");
+    const btnLink = text("Button link", "https://github.com/grigio/eosfilestore-web");
+    return (
+      <CarouselWrapper
+      carouselTitle={title}
+      carouselDescription={description}
+      carouselBtnText={btnText} carouselBtnLink={btnLink}
+      />
+    )
+  })
+
+  .add ('CarouselSlider', () => {
+    return (
+      <CarouselSlider/>
+    )
+  })
 
 const slug = text("Event slug", "582 EOS");
 const name = text("Name", "Blockchain Hub in Nigeria");

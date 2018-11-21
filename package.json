@@ -1,7 +1,7 @@
 {
   "name": "eos-nation-website",
   "version": "1.0.0",
-  "homepage": "https://fluidtrends.github.io/eos-nation-website",
+  "homepage": "https://cristofor-io.github.io/eos-nation-website",
   "description": "eos-nation-website",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
     "deployweb": "aws s3 sync web/build s3://www.chunky.io",
     "start": "start-storybook -p 9009 -c .storybook -s static",
     "build": "build-storybook -o build",
+    "build-storybook": "build-storybook -c .storybook",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -29,18 +30,22 @@
     "@storybook/addon-knobs": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-core": "6",
-    "react-savor": "0.x",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "react-savor": "0.x"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-responsive-carousel": "^3.1.43",
+    "react-slick": "^0.23.2",
     "react-dom-chunky": "^0.9.140",
     "react-spring": "^5.5.1",
     "react-truncate": "^2.4.0",
     "react-vivus": "0.0.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^4.0.3",
+    "twitter": "^1.7.1",
     "vivus": "^0.4.4"
   }
 }

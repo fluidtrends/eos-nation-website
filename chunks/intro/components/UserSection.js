@@ -1,7 +1,6 @@
 import React from 'react'
 import { Component } from 'react-dom-chunky'
 import UserCard from './UserCard'
-import '../../../assets/style.css';
 import { Heading4 } from './StyledComponents';
 
 class UserSection extends Component {
